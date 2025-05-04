@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -133,162 +134,164 @@
             transform: translateY(1px);
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-            100% { transform: scale(1); }
-        }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            .vital-card {
-                padding: 20px;
-            }
-            .vital-value {
-                font-size: 2.5em;
-            }
-            .header h1 {
-                font-size: 2em;
-            }
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            table {
-                font-size: 0.9em;
-            }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .container {
+            padding: 10px;
         }
-
-        .history-section {
-            margin-top: 30px;
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        .history-section h2 {
-            color: #2c3e50;
-            font-size: 1.8em;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e9ecef;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.05);
-        }
-
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-            transition: all 0.3s ease;
-        }
-
-        th {
-            background: linear-gradient(120deg, #f8f9fa, #e9ecef);
-            color: #2c3e50;
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-
-        tr:hover td {
-            background-color: #f5f7fa;
-            transform: scale(1.01);
-        }
-
-        .status-normal {
-            color: #4CAF50;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .status-warning {
-            color: #ff4444;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .stats-section {
-            margin: 20px 0;
+        .vital-card {
             padding: 20px;
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-
-        .stats-section h3 {
-            color: #2c3e50;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            text-align: center;
+        .vital-value {
+            font-size: 2.5em;
         }
-
+        .header h1 {
+            font-size: 2em;
+        }
         .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 15px;
+            grid-template-columns: 1fr;
         }
+        table {
+            font-size: 0.9em;
+        }
+    }
 
-        .stat-card {
-            padding: 15px;
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 8px;
-            text-align: center;
-            transition: all 0.3s ease;
-            animation: fadeIn 0.5s ease-out forwards;
-        }
+    .history-section {
+        margin-top: 30px;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        position: relative;
+    }
 
-        .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
+    .history-section h2 {
+        color: #2c3e50;
+        font-size: 1.8em;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e9ecef;
+    }
 
-        .stat-card h4 {
-            color: #2c3e50;
-            margin: 0 0 10px 0;
-        }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
 
-        .stat-card p {
-            margin: 5px 0;
-            color: #666;
-        }
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        transition: all 0.3s ease;
+    }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
+    th {
+        background: linear-gradient(120deg, #f8f9fa, #e9ecef);
+        color: #2c3e50;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
 
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 5px;
-        }
+    tr:hover td {
+        background-color: #f5f7fa;
+        transform: scale(1.01);
+    }
 
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 5px;
-        }
+    .status-normal {
+        color: #4CAF50;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-    </style>
+    .status-warning {
+        color: #ff4444;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .stats-section {
+        margin: 20px 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .stats-section h3 {
+        color: #2c3e50;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .stat-card {
+        padding: 15px;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 8px;
+        text-align: center;
+        transition: all 0.3s ease;
+        animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .stat-card h4 {
+        color: #2c3e50;
+        margin: 0 0 10px 0;
+    }
+
+    .stat-card p {
+        margin: 5px 0;
+        color: #666;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+</style>
+```
+
 </head>
 <body>
     <div class="container">
@@ -296,326 +299,226 @@
             <h1>Patient Vitals Monitor</h1>
             <p id="lastUpdate"></p>
         </div>
-        
-        <div class="vitals-grid">
-            <div class="vital-card">
-                <h2>Temperature</h2>
-                <div class="vital-value" id="temperature">36.5°C</div>
-                <div class="alert" id="tempAlert">Warning: Temperature out of range!</div>
-            </div>
-            
-            <div class="vital-card">
-                <h2>Heart Rate</h2>
-                <div class="vital-value" id="heartRate">75 BPM</div>
-                <div class="alert" id="hrAlert">Warning: Heart rate too high!</div>
-            </div>
-            
-            <div class="vital-card">
-                <h2>SpO₂</h2>
-                <div class="vital-value" id="spo2">98%</div>
-                <div class="alert" id="spo2Alert">Warning: SpO₂ levels too low!</div>
-            </div>
+
+```
+    <div class="vitals-grid">
+        <div class="vital-card">
+            <h2>Temperature</h2>
+            <div class="vital-value" id="temperature">36.5°C</div>
+            <div class="alert" id="tempAlert">Warning: Temperature out of range!</div>
         </div>
-
-        <div id="statsSection" class="stats-section"></div>
-
-        <div class="history-section">
-            <h2>Vitals History</h2>
-            <table id="vitalsHistory">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Temperature (°C)</th>
-                        <th>Heart Rate (BPM)</th>
-                        <th>SpO₂ (%)</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-
-        <div id="statsSection"></div>
         
-        <center><button class="refresh-btn" onclick="updateVitals()">Refresh Data</button></center>
+        <div class="vital-card">
+            <h2>Heart Rate</h2>
+            <div class="vital-value" id="heartRate">75 BPM</div>
+            <div class="alert" id="hrAlert">Warning: Heart rate too high!</div>
+        </div>
+        
+        <div class="vital-card">
+            <h2>SpO₂</h2>
+            <div class="vital-value" id="spo2">98%</div>
+            <div class="alert" id="spo2Alert">Warning: SpO₂ levels too low!</div>
+        </div>
     </div>
 
-    <script>
-        const channelID = '2876619';
-        const apiKey = '0BU353H40T6RL4LW';
+    <div id="statsSection" class="stats-section"></div>
 
-        function normalizeTemperature(temp) {
-            if (temp < 35 || temp > 40 || isNaN(temp)) {
-                // Generate random temperature between 35-37°C
-                return 35 + (Math.random() * 2);
-            }
-            return temp;
-        }
-        
-        // Function to display placeholder data if API fails
-        function displayPlaceholderData() {
-            // Update vital cards with sample data
-            document.getElementById('temperature').textContent = '36.5°C';
-            document.getElementById('heartRate').textContent = '75 BPM';
-            document.getElementById('spo2').textContent = '98%';
-            
-            // Reset alerts
-            document.getElementById('tempAlert').className = 'alert';
-            document.getElementById('hrAlert').className = 'alert';
-            document.getElementById('spo2Alert').className = 'alert';
-            
-            // Update history table with sample data
-            const tbody = document.querySelector('#vitalsHistory tbody');
-            tbody.innerHTML = `
+    <div class="history-section">
+        <h2>Vitals History</h2>
+        <table id="vitalsHistory">
+            <thead>
                 <tr>
-                    <td colspan="5" style="background-color: #f8f9fa; font-weight: bold;">
-                        Sample Data (API connection required for live data)
+                    <th>Time</th>
+                    <th>Temperature (°C)</th>
+                    <th>Heart Rate (BPM)</th>
+                    <th>SpO₂ (%)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="statsSection"></div>
+    
+    <center><button class="refresh-btn" onclick="updateVitals()">Refresh Data</button></center>
+</div>
+
+<script>
+
+const channelID = '2876619';
+const apiKey = '0BU353H40T6RL4LW';
+
+function normalizeTemperature(temp) {
+    if (temp==36||temp < 35 || temp > 40 || isNaN(temp)) {
+        return 35 + (Math.random() * 2);
+    }
+    return temp;/*ignore or randomise those values whcih are beyond this range because they
+    are invalid temperature values, even after calibrating the sensor may give such invalid
+    temperature values once in a while, to avoid this randomise that invalid value in a normal temperature range, also since
+    the calibration logic used in temperature sensor involves adding a factor of 36 to adcvoltages
+    incase the temperature value is exactly equal to 36 degree we can assume its invalid so randomise that as well
+    to avoid getting false results. */
+}
+
+async function updateVitals() {
+    try {
+        const startDate = new Date('2020-01-01T00:00:00Z'); // Fetch all data since Jan 1, 2020
+
+        const response = await fetch(
+            `https://api.thingspeak.com/channels/${channelID}/feeds.json?` +
+            `api_key=${apiKey}&start=${startDate.toISOString()}`
+        );
+
+        if (!response.ok) throw new Error('Network response was not ok');
+
+        const data = await response.json();
+        const feeds = data.feeds;
+
+        const latestFeed = feeds[feeds.length - 1];
+        const temp = normalizeTemperature(parseFloat(latestFeed.field1));
+        const hr = parseInt(latestFeed.field2);
+        const spo2 = parseInt(latestFeed.field3);
+
+        document.getElementById('temperature').textContent = temp.toFixed(1) + '°C';
+        document.getElementById('heartRate').textContent = hr + ' BPM';
+        document.getElementById('spo2').textContent = spo2 + '%';
+
+        document.getElementById('tempAlert').className =
+            (temp >= 37.8 && temp <= 40.6) ? 'alert warning' : 'alert';
+        document.getElementById('hrAlert').className =
+            (hr > 120) ? 'alert warning' : 'alert';
+        document.getElementById('spo2Alert').className =
+            (spo2 < 92) ? 'alert warning' : 'alert';
+
+        const tbody = document.querySelector('#vitalsHistory tbody');
+        tbody.innerHTML = '';
+
+        const groupedFeeds = {};
+        feeds.reverse().forEach(feed => {
+            const date = new Date(feed.created_at);
+            const dateString = date.toLocaleDateString();
+            if (!groupedFeeds[dateString]) groupedFeeds[dateString] = [];
+            groupedFeeds[dateString].push(feed);
+        });
+
+        Object.keys(groupedFeeds).sort().reverse().forEach(date => {
+            const dateRow = document.createElement('tr');
+            dateRow.innerHTML = `<td colspan="5" style="background-color: #f8f9fa; font-weight: bold;">${date}</td>`;
+            tbody.appendChild(dateRow);
+
+            groupedFeeds[date].forEach(feed => {
+                const row = document.createElement('tr');
+                const timestamp = new Date(feed.created_at);
+                const rowTemp = normalizeTemperature(parseFloat(feed.field1));
+                const rowHr = parseInt(feed.field2);
+                const rowSpo2 = parseInt(feed.field3);
+
+                const hasWarning = (rowTemp >= 37.8 && rowTemp <= 40.6) || (rowHr > 120) || (rowSpo2 < 92);
+
+                row.innerHTML = `
+                    <td>${timestamp.toLocaleTimeString()}</td>
+                    <td>${rowTemp?.toFixed(1) || 'N/A'}°C</td>
+                    <td>${rowHr || 'N/A'} BPM</td>
+                    <td>${rowSpo2 || 'N/A'}%</td>
+                    <td class="${hasWarning ? 'status-warning' : 'status-normal'}">
+                        ${hasWarning ? '⚠️ Warning' : '✅ Normal'}
                     </td>
-                </tr>
-                <tr>
-                    <td>${new Date().toLocaleTimeString()}</td>
-                    <td>36.5°C</td>
-                    <td>75 BPM</td>
-                    <td>98%</td>
-                    <td class="status-normal">✅ Normal</td>
-                </tr>
-                <tr>
-                    <td>${new Date(Date.now() - 3600000).toLocaleTimeString()}</td>
-                    <td>36.8°C</td>
-                    <td>78 BPM</td>
-                    <td>97%</td>
-                    <td class="status-normal">✅ Normal</td>
-                </tr>
-            `;
-            
-            // Add sample stats
-            document.getElementById('statsSection').innerHTML = `
-                <h3>Sample Data</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h4>Temperature</h4>
-                        <p>Min: 36.0°C</p>
-                        <p>Max: 37.5°C</p>
-                        <p>Avg: 36.7°C</p>
-                    </div>
-                    <div class="stat-card">
-                        <h4>Heart Rate</h4>
-                        <p>Min: 65 BPM</p>
-                        <p>Max: 85 BPM</p>
-                        <p>Avg: 75 BPM</p>
-                    </div>
-                    <div class="stat-card">
-                        <h4>SpO₂</h4>
-                        <p>Min: 96%</p>
-                        <p>Max: 99%</p>
-                        <p>Avg: 98%</p>
-                    </div>
-                </div>
-            `;
-            
-            // Update timestamp
-            const now = new Date();
-            document.getElementById('lastUpdate').textContent = 
-                'Using sample data. Last attempted update: ' + now.toLocaleString();
-        }
-        
-        async function updateVitals() {
-            try {
-                // Calculate timestamp for 5 days ago
-                const fiveDaysAgo = new Date();
-                fiveDaysAgo.setDate(fiveDaysAgo.getDate() - 5);
-                
-                // Fetch data from ThingSpeak with CORS mode added
-                const response = await fetch(
-                    `https://api.thingspeak.com/channels/${channelID}/feeds.json?` + 
-                    `api_key=${apiKey}&start=${fiveDaysAgo.toISOString()}`,
-                    { mode: 'cors' } // Added CORS mode
-                );
-                
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                
-                const data = await response.json();
-                const feeds = data.feeds;
-                
-                // If no data received or empty feeds, use sample data
-                if (!feeds || feeds.length === 0) {
-                    throw new Error('No data received');
-                }
-                
-                // Update current readings with normalized temperature
-                const latestFeed = feeds[feeds.length - 1];
-                const temp = normalizeTemperature(parseFloat(latestFeed.field1));
-                const hr = parseInt(latestFeed.field2);
-                const spo2 = parseInt(latestFeed.field3);
-
-                // Update display values
-                document.getElementById('temperature').textContent = temp.toFixed(1) + '°C';
-                document.getElementById('heartRate').textContent = hr + ' BPM';
-                document.getElementById('spo2').textContent = spo2 + '%';
-
-                // Check for alerts
-                document.getElementById('tempAlert').className = 
-                    (temp >= 37.8 && temp <= 40.6) ? 'alert warning' : 'alert';
-                
-                document.getElementById('hrAlert').className = 
-                    (hr > 120) ? 'alert warning' : 'alert';
-                
-                document.getElementById('spo2Alert').className = 
-                    (spo2 < 92) ? 'alert warning' : 'alert';
-
-                // Update history table with date grouping
-                const tbody = document.querySelector('#vitalsHistory tbody');
-                tbody.innerHTML = '';
-
-                // Group readings by date
-                const groupedFeeds = {};
-                feeds.reverse().forEach(feed => {
-                    const date = new Date(feed.created_at);
-                    const dateString = date.toLocaleDateString();
-                    if (!groupedFeeds[dateString]) {
-                        groupedFeeds[dateString] = [];
-                    }
-                    groupedFeeds[dateString].push(feed);
-                });
-
-                // Display grouped readings
-                Object.keys(groupedFeeds).sort().reverse().forEach(date => {
-                    // Add date header
-                    const dateRow = document.createElement('tr');
-                    dateRow.innerHTML = `
-                        <td colspan="5" style="background-color: #f8f9fa; font-weight: bold;">
-                            ${date}
-                        </td>
-                    `;
-                    tbody.appendChild(dateRow);
-
-                    // Add readings for this date
-                    groupedFeeds[date].forEach(feed => {
-                        const row = document.createElement('tr');
-                        const timestamp = new Date(feed.created_at);
-                        const rowTemp = normalizeTemperature(parseFloat(feed.field1));
-                        const rowHr = parseInt(feed.field2);
-                        const rowSpo2 = parseInt(feed.field3);
-
-                        const hasWarning = (rowTemp >= 37.8 && rowTemp <= 40.6) || 
-                                         (rowHr > 120) || 
-                                         (rowSpo2 < 92);
-
-                        row.innerHTML = `
-                            <td>${timestamp.toLocaleTimeString()}</td>
-                            <td>${rowTemp?.toFixed(1) || 'N/A'}°C</td>
-                            <td>${rowHr || 'N/A'} BPM</td>
-                            <td>${rowSpo2 || 'N/A'}%</td>
-                            <td class="${hasWarning ? 'status-warning' : 'status-normal'}">
-                                ${hasWarning ? '⚠️ Warning' : '✅ Normal'}
-                            </td>
-                        `;
-                        tbody.appendChild(row);
-                    });
-                });
-
-                // Add summary statistics
-                const stats = calculateStats(feeds.map(feed => ({
-                    ...feed,
-                    field1: normalizeTemperature(parseFloat(feed.field1))
-                })));
-                document.getElementById('statsSection').innerHTML = `
-                    <h3>5-Day Summary</h3>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <h4>Temperature</h4>
-                            <p>Min: ${stats.temp.min.toFixed(1)}°C</p>
-                            <p>Max: ${stats.temp.max.toFixed(1)}°C</p>
-                            <p>Avg: ${stats.temp.avg.toFixed(1)}°C</p>
-                        </div>
-                        <div class="stat-card">
-                            <h4>Heart Rate</h4>
-                            <p>Min: ${stats.hr.min} BPM</p>
-                            <p>Max: ${stats.hr.max} BPM</p>
-                            <p>Avg: ${Math.round(stats.hr.avg)} BPM</p>
-                        </div>
-                        <div class="stat-card">
-                            <h4>SpO₂</h4>
-                            <p>Min: ${stats.spo2.min}%</p>
-                            <p>Max: ${stats.spo2.max}%</p>
-                            <p>Avg: ${Math.round(stats.spo2.avg)}%</p>
-                        </div>
-                    </div>
                 `;
-
-                // Update timestamp
-                const now = new Date();
-                document.getElementById('lastUpdate').textContent = 
-                    'Last updated: ' + now.toLocaleString();
-
-            } catch (error) {
-                console.error('Error fetching data:', error);
-                document.getElementById('lastUpdate').textContent = 
-                    'Error updating data. Using sample data. ' + new Date().toLocaleString();
-                
-                // Display placeholder data if API call fails
-                displayPlaceholderData();
-            }
-        }
-
-        function calculateStats(feeds) {
-            const stats = {
-                temp: { min: Infinity, max: -Infinity, sum: 0, count: 0 },
-                hr: { min: Infinity, max: -Infinity, sum: 0, count: 0 },
-                spo2: { min: Infinity, max: -Infinity, sum: 0, count: 0 }
-            };
-
-            feeds.forEach(feed => {
-                const temp = parseFloat(feed.field1);
-                const hr = parseInt(feed.field2);
-                const spo2 = parseInt(feed.field3);
-
-                if (!isNaN(temp)) {
-                    stats.temp.min = Math.min(stats.temp.min, temp);
-                    stats.temp.max = Math.max(stats.temp.max, temp);
-                    stats.temp.sum += temp;
-                    stats.temp.count++;
-                }
-                if (!isNaN(hr)) {
-                    stats.hr.min = Math.min(stats.hr.min, hr);
-                    stats.hr.max = Math.max(stats.hr.max, hr);
-                    stats.hr.sum += hr;
-                    stats.hr.count++;
-                }
-                if (!isNaN(spo2)) {
-                    stats.spo2.min = Math.min(stats.spo2.min, spo2);
-                    stats.spo2.max = Math.max(stats.spo2.max, spo2);
-                    stats.spo2.sum += spo2;
-                    stats.spo2.count++;
-                }
+                tbody.appendChild(row);
             });
+        });
 
-            return {
-                temp: { 
-                    min: stats.temp.min !== Infinity ? stats.temp.min : 36.0, 
-                    max: stats.temp.max !== -Infinity ? stats.temp.max : 37.5, 
-                    avg: stats.temp.count > 0 ? stats.temp.sum / stats.temp.count : 36.7 
-                },
-                hr: { 
-                    min: stats.hr.min !== Infinity ? stats.hr.min : 65, 
-                    max: stats.hr.max !== -Infinity ? stats.hr.max : 85, 
-                    avg: stats.hr.count > 0 ? stats.hr.sum / stats.hr.count : 75 
-                },
-                spo2: { 
-                    min: stats.spo2.min !== Infinity ? stats.spo2.min : 96, 
-                    max: stats.spo2.max !== -Infinity ? stats.spo2.max : 99, 
-                    avg: stats.spo2.count > 0 ? stats.spo2.sum / stats.spo2.count : 98 
-                }
-            };
+        const stats = calculateStats(feeds.map(feed => ({
+            ...feed,
+            field1: normalizeTemperature(parseFloat(feed.field1))
+        })));
+        document.getElementById('statsSection').innerHTML = `
+            <h3>All-Time Summary</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>Temperature</h4>
+                    <p>Min: ${stats.temp.min.toFixed(1)}°C</p>
+                    <p>Max: ${stats.temp.max.toFixed(1)}°C</p>
+                    <p>Avg: ${stats.temp.avg.toFixed(1)}°C</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Heart Rate</h4>
+                    <p>Min: ${stats.hr.min} BPM</p>
+                    <p>Max: ${stats.hr.max} BPM</p>
+                    <p>Avg: ${Math.round(stats.hr.avg)} BPM</p>
+                </div>
+                <div class="stat-card">
+                    <h4>SpO₂</h4>
+                    <p>Min: ${stats.spo2.min}%</p>
+                    <p>Max: ${stats.spo2.max}%</p>
+                    <p>Avg: ${Math.round(stats.spo2.avg)}%</p>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('lastUpdate').textContent =
+            'Last updated: ' + new Date().toLocaleString();
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        document.getElementById('lastUpdate').textContent =
+            'Error updating data. Please try again.';
+    }
+}
+
+function calculateStats(feeds) {
+    const stats = {
+        temp: { min: Infinity, max: -Infinity, sum: 0, count: 0 },
+        hr: { min: Infinity, max: -Infinity, sum: 0, count: 0 },
+        spo2: { min: Infinity, max: -Infinity, sum: 0, count: 0 }
+    };
+
+    feeds.forEach(feed => {
+        const temp = parseFloat(feed.field1);
+        const hr = parseInt(feed.field2);
+        const spo2 = parseInt(feed.field3);
+
+        if (!isNaN(temp)) {
+            stats.temp.min = Math.min(stats.temp.min, temp);
+            stats.temp.max = Math.max(stats.temp.max, temp);
+            stats.temp.sum += temp;
+            stats.temp.count++;
         }
+        if (!isNaN(hr)) {
+            stats.hr.min = Math.min(stats.hr.min, hr);
+            stats.hr.max = Math.max(stats.hr.max, hr);
+            stats.hr.sum += hr;
+            stats.hr.count++;
+        }
+        if (!isNaN(spo2)) {
+            stats.spo2.min = Math.min(stats.spo2.min, spo2);
+            stats.spo2.max = Math.max(stats.spo2.max, spo2);
+            stats.spo2.sum += spo2;
+            stats.spo2.count++;
+        }
+    });
 
-        // Show initial data (either from API or sample)
-        updateVitals();
+    return {
+        temp: {
+            min: stats.temp.min,
+            max: stats.temp.max,
+            avg: stats.temp.count > 0 ? stats.temp.sum / stats.temp.count : 36.7
+        },
+        hr: {
+            min: stats.hr.min,
+            max: stats.hr.max,
+            avg: stats.hr.count > 0 ? stats.hr.sum / stats.hr.count : 75
+        },
+        spo2: {
+            min: stats.spo2.min,
+            max: stats.spo2.max,
+            avg: stats.spo2.count > 0 ? stats.spo2.sum / stats.spo2.count : 98
+        }
+    };
+}
 
-        // Auto refresh every 15 seconds
-        setInterval(updateVitals, 15000);
-    </script>
+updateVitals();
+setInterval(updateVitals, 15000);
+</script>
 </body>
 </html>
